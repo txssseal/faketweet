@@ -1,0 +1,12 @@
+<%= link_to gravatar_for(current_user), current_user %> <!-- SHows gravatar image -->
+<h1>
+	<%= current_user.name %> <!-- Displays the current user name -->
+</h1>
+
+<span>
+	<%= link_to "view my profile", current_user %> <!--links to view profile -->
+</span>
+
+<span>
+	<%= pluralize(current_user.microposts.count, "micropost") %> <!--this puts the number of posts they have-->
+</span>
